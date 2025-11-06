@@ -1,0 +1,10 @@
+{
+  "warId": "20251106",
+  "opponent": "EnemyClan",
+  "startTime": "2025-11-06 18:00",
+  "endTime": "2025-11-07 18:00",
+  "participants": [
+    {"name": "玩家A", "attacks": 2, "stars": 5, "remaining": 0},
+    {"name": "玩家B", "attacks": 1, "stars": 2, "remaining": 1}
+  ]
+}

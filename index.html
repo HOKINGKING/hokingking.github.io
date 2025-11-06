@@ -1,0 +1,18 @@
+<!-- 引入marked.js -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="/js/index.js"></script>
+<script>
+  // 读取公告JSON并渲染
+  fetch('data/announcements.json').then(res => res.json()).then(anns => {
+    const container = document.getElementById('announcements');
+    anns.forEach(ann => {
+      container.innerHTML += `
+        <div class="ann-item">
+          <h3>${ann.title}</h3>
+          <p class="date">${ann.date}</p>
+          <div class="content">${marked.parse(ann.content)}</div>
+        </div>
+      `;
+    });
+  });
+</script>
